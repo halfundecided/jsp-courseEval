@@ -1,0 +1,6 @@
+package user;
+
+//database 접근 객
+public class UserDAO {
+
+}
