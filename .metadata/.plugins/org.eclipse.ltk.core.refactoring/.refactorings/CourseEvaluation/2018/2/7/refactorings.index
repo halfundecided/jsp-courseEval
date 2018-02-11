@@ -1,2 +1,8 @@
 1518338417608	Delete element
 1518338700705	Rename resource 'jquery-3.3.1.min.js'
+1518347335468	Copy file
+1518347342060	Delete element
+1518347344709	Move 'userLogin.jsp' to 'WebContent'
+1518347352634	Copy file
+1518347361007	Rename resource 'userLogin.jsp'
+1518347364220	Move 'userJoin.jsp' to 'WebContent'

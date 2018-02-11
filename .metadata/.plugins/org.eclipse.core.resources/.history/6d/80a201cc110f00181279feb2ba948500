@@ -1,0 +1,141 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-sale=1, shrink-to-fit=no">
+  <title>Course Evaluation</title>
+  <!-- bootstrap CSS -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <!-- custom CSS -->
+  <link rel="stylesheet" href="./css/custom.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class ="navbar-brand" href="index.jsp">Course Evaluation</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" name="button">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="navbar" class="collapse navbar-collapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.jsp">Main</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="dropdown" data-toggle="dropdown" href="#">
+            Users
+          </a>
+          <div class="dropdown-menu" aria-labelledby="dropdown">
+            <a class="dropdown-item" href="#">Log in</a>
+            <a class="dropdown-item" href="#">Sign up</a>
+            <a class="dropdown-item" href="#">Log out</a>
+          </div>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">search</button>
+      </form>
+    </div>
+  </nav>
+
+  <section class="container">
+    <form class="form-inline mt-3" action="./index.jsp" method="get">
+      <select class="form-control mx-1 mt-2" name="lectureDivide">
+        <option value="all">All</option>
+        <option value="major">Major</option>
+        <option value="elective">Elective</option>
+        <option value="others">Others</option>
+      </select>
+      <input type="text" name="search" class="form-control mx-1 mt-2" placeholder="search">
+      <button type="submit" class="btn btn-primary mx-1 mt-2">Search</button>
+      <a class="btn btn-primary mx-1 mt-2" data-toggle="modal" href="#registerModal">Register</a>
+      <a class="btn btn-danger mx-1 mt-2" data-toggle="modal" href="#reportModal">Report</a>
+    </form>
+  </section>
+
+  <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="modal" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal">Register Evaluation</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form action="./evaluationRegisterAction.jsp" method="post">
+              <div class="form-row">
+                <div class="form-group col-sm-6">
+                  <label>Course title</label>
+                  <input type="text" name="courseName" class="form-control" maxlength="20">
+                </div>
+                <div class="form-group col-sm-6">
+                  <label>Professor</label>
+                  <input type="text" name="professorName" class="form-control" maxlength="20">
+                </div>
+              </div>
+            </form>
+            <form class="form-row">
+              <div class="form-group col-sm-4">
+                <label>Year</label>
+                <select class="form-control" name="courseYear">
+                  <option value="2014">2014</option>
+                  <option value="2015">2015</option>
+                  <option value="2016">2016</option>
+                  <option value="2017">2017</option>
+                  <option value="2018" selected>2018</option>
+                  <option value="2019">2019</option>
+                  <option value="2020">2020</option>
+                  <option value="2021">2021</option>
+                  <option value="2022">2022</option>
+                  <option value="2023">2023</option>
+                </select>
+              </div>
+              <div class="form-group col-sm-4">
+                <label>Semester</label>
+                <select class="form-control" name="semesterDivide">
+                  <option value="fall">Fall</option>
+                  <option value="winter">Winter session</option>
+                  <option value="spring" selected>Spring</option>
+                  <option value="summer1">Summer I</option>
+                  <option value="summer2">Summer II</option>
+                </select>
+              </div>
+              <div class="form-group col-sm-4">
+                <label>Division</label>
+                <select class="form-control" name="courseDivide">
+                  <option value="major" selected>Major</option>
+                  <option value="elective">Elective</option>
+                  <option value="others">Others</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Title</label>
+                <input type="text" name="evaluationTitle" class="form-control" maxlength="30">
+              </div>
+              <div class="form-group">
+                <label>Contents</label>
+                <textarea name="evaluationContent" class="form-control" maxlength="204">
+              </div>
+            </form>
+          </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- jQuery javaScript -->
+  <script type="text/javascript" src="./js/jquery.min.js"></script>
+  <!-- popper -->
+  <script type="text/javascript" src="./js/popper.min.js"></script>
+  <!-- bootstrap javaScript -->
+  <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+
+</body>
+</html>
