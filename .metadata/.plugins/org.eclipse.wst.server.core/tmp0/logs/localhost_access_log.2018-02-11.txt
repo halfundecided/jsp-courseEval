@@ -226,3 +226,17 @@
 0:0:0:0:0:0:0:1 - - [11/Feb/2018:11:45:59 -0500] "GET /CourseEvaluation/css/bootstrap.min.css HTTP/1.1" 304 -
 0:0:0:0:0:0:0:1 - - [11/Feb/2018:11:45:59 -0500] "GET /CourseEvaluation/js/jquery.min.js HTTP/1.1" 304 -
 0:0:0:0:0:0:0:1 - - [11/Feb/2018:11:45:59 -0500] "GET /CourseEvaluation/js/popper.min.js HTTP/1.1" 404 1115
+0:0:0:0:0:0:0:1 - - [11/Feb/2018:12:47:02 -0500] "GET /CourseEvaluation/index.jsp HTTP/1.1" 200 14734
+0:0:0:0:0:0:0:1 - - [11/Feb/2018:12:47:02 -0500] "GET /CourseEvaluation/js/popper.min.js HTTP/1.1" 404 1115
+0:0:0:0:0:0:0:1 - - [11/Feb/2018:12:47:02 -0500] "GET /CourseEvaluation/js/jquery.min.js HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [11/Feb/2018:12:47:02 -0500] "GET /CourseEvaluation/js/bootstrap.min.js HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [11/Feb/2018:12:47:02 -0500] "GET /CourseEvaluation/css/custom.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [11/Feb/2018:12:47:02 -0500] "GET /CourseEvaluation/css/bootstrap.min.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [11/Feb/2018:12:47:03 -0500] "GET /CourseEvaluation/js/popper.min.js HTTP/1.1" 404 1115
+0:0:0:0:0:0:0:1 - - [11/Feb/2018:14:00:01 -0500] "GET /CourseEvaluation/index.jsp HTTP/1.1" 200 14734
+0:0:0:0:0:0:0:1 - - [11/Feb/2018:14:00:01 -0500] "GET /CourseEvaluation/js/jquery.min.js HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [11/Feb/2018:14:00:01 -0500] "GET /CourseEvaluation/js/bootstrap.min.js HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [11/Feb/2018:14:00:01 -0500] "GET /CourseEvaluation/css/bootstrap.min.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [11/Feb/2018:14:00:01 -0500] "GET /CourseEvaluation/js/popper.min.js HTTP/1.1" 404 1115
+0:0:0:0:0:0:0:1 - - [11/Feb/2018:14:00:01 -0500] "GET /CourseEvaluation/css/custom.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [11/Feb/2018:14:00:01 -0500] "GET /CourseEvaluation/js/popper.min.js HTTP/1.1" 404 1115
